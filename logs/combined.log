@@ -1,0 +1,7 @@
+{"courseId":"1","level":"info","message":"Fetched course with ID 1","timestamp":"2024-11-10T16:33:05.583Z"}
+{"level":"info","message":"Incoming request: POST /api/courses","timestamp":"2024-11-10T19:41:24.839Z"}
+{"level":"info","message":"Incoming request: PUT /api/courses/1","timestamp":"2024-11-10T19:41:24.851Z"}
+{"level":"info","message":"Incoming request: DELETE /api/courses/1","timestamp":"2024-11-10T19:41:24.855Z"}
+{"level":"info","message":"Incoming request: POST /api/courses","timestamp":"2024-11-10T19:42:14.415Z"}
+{"level":"info","message":"Incoming request: PUT /api/courses/1","timestamp":"2024-11-10T19:42:14.433Z"}
+{"level":"info","message":"Incoming request: DELETE /api/courses/1","timestamp":"2024-11-10T19:42:14.437Z"}
