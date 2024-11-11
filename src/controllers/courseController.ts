@@ -109,7 +109,7 @@ export const deleteCourse = (req: Request, res: Response, next: NextFunction) =>
         writeData(COURSE_FILE, courses);
     
         logger.info(`Deleted course with ID ${req.params.id}`, { courseId: req.params.id });
-        res.status(200).json(deletedCourse);
+        res.status(200).json(`course with ID ${req.params.id} is deleted`);
       } catch (error) {
         logger.error(`Failed to delete course with ID ${req.params.id}`, { error });
         next(error);
