@@ -41,7 +41,7 @@ router.get('/', getAllCourses);          // Read all courses
  * @swagger
  * /api/courses/{id}:
  *   get:
- *     summary: Get a course by ID
+ *     summary: Get a specific course 
  *     parameters:
  *       - in: path
  *         name: id
@@ -74,6 +74,35 @@ router.get('/:id', getCourseById);      // Read one course by ID
  *                 type: string
  *               description:
  *                 type: string
+ *               modules:
+ *                 type: array
+ *                 items:
+ *                   type: object
+ *                   properties:
+ *                     title:
+ *                       type: string
+ *                     lessons:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           title:
+ *                             type: string
+ *                           description:
+ *                             type: string
+ *                           topics:
+ *                             type: array
+ *                             items:
+ *                               type: string
+ *                           content:
+ *                             type: array
+ *                             items:
+ *                               type: object
+ *                               properties:
+ *                                 type:
+ *                                   type: string
+ *                                 data:
+ *                                   type: string
  *     responses:
  *       201:
  *         description: Course created
@@ -105,6 +134,35 @@ router.post('/create', validateData(courseSchema), createCourse);         // Cre
  *                 type: string
  *               description:
  *                 type: string
+ *               modules:
+ *                 type: array
+ *                 items:
+ *                   type: object
+ *                   properties:
+ *                     title:
+ *                       type: string
+ *                     lessons:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           title:
+ *                             type: string
+ *                           description:
+ *                             type: string
+ *                           topics:
+ *                             type: array
+ *                             items:
+ *                               type: string
+ *                           content:
+ *                             type: array
+ *                             items:
+ *                               type: object
+ *                               properties:
+ *                                 type:
+ *                                   type: string
+ *                                 data:
+ *                                   type: string
  *     responses:
  *       200:
  *         description: Course updated

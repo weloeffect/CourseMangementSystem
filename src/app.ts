@@ -12,6 +12,9 @@ app.use(express.json());
 
 swaggerSetup(app);
 
+app.get('/', (req: Request, res: Response) => {
+  res.send('Course Management System');
+});
 
 app.use('/api/courses', courseRoutes);
 
