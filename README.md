@@ -53,7 +53,7 @@ A **Course Management System** that enables CRUD (Create, Read, Update, Delete) 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/CourseMangementSystem.git
+   git clone 
    ```
 
 2. Install dependencies:
